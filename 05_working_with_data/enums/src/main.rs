@@ -2,7 +2,7 @@ enum Direction {
     UP,
     Down,
     Right,
-    Left,
+    Left
 }
 
 fn go_to(direction: Direction) {
