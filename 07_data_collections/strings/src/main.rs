@@ -1,12 +1,33 @@
-fn print_it(str: &str) {
-    println!("{}", str);
+use std::mem::discriminant;
+
+struct LineCount {
+    name: String,
+    count: u32,
 }
 
-struct Person {
-    name: String,
+fn print_name(name: &str) {
+    println!("count: {:?}", name);
 }
 
 fn main() {
-    let str = String::from("Hello, world!");
-    print_it(&str);
+    let lines = vec![
+        LineCount {
+            name: "a".to_string(),
+            count: 1,
+        },
+        LineCount {
+            name: "b".to_string(),
+            count: 2,
+        },
+        LineCount {
+            name: "c".to_string(),
+            count: 3,
+        },
+    ];
+
+
+    for line in lines {
+        print_name(&line.name);
+        println!("count: {}", line.count);
+    }
 }
