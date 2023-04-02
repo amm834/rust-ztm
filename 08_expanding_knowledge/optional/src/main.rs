@@ -1,8 +1,10 @@
+/// A person with an age and a name
 struct Person {
     age: Option<i32>,
     name: String,
 }
 
+/// Find the quantity of a product by name
 struct Product {
     name: String,
     quantity: i32,
