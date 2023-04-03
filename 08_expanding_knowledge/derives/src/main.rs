@@ -1,33 +1,19 @@
-#[derive(Debug,Clone,Copy)]
-enum Position {
-    Worker,
-    Manager,
-    Director,
+#[derive(Debug)]
+enum PromoDiscount {
+    NewUser,
+    Holiday(String),
 }
 
-
-#[derive(Debug, Clone, Copy)]
-struct Person {
-    position: Position,
-    name: String,
-}
-
-
-fn print_person(person: Person) {
-    match person.position {
-        Position::Worker => println!("{} is a worker", person.name),
-        Position::Manager => println!("{} is a manager", person.name),
-        Position::Director => println!("{} is a director", person.name),
-    }
+#[derive(Debug)]
+enum Discount {
+    Percentage(i32),
+    Amount(i32),
+    Promotion(PromoDiscount),
 }
 
 fn main() {
-    let person = Person {
-        position: Position::Worker,
-        name: String::from("John").clone(),
-    };
-    println!("{:?}", person);
-    println!("{:?}", Position::Manager);
-    print_person(person);
-    print_person(person);
+    let discount = Discount::Promotion(
+        PromoDiscount::NewUser
+    );
+    println!("{:?}", discount);
 }

@@ -1,5 +1,0 @@
-var searchIndex = JSON.parse('{\
-"optional":{"doc":"","t":[3,3,12,11,11,11,11,5,11,11,11,11,5,12,12,12,11,11,11,11,11,11],"n":["Person","Product","age","borrow","borrow","borrow_mut","borrow_mut","find_quantity","from","from","into","into","main","name","name","quantity","try_from","try_from","try_into","try_into","type_id","type_id"],"q":["optional","","","","","","","","","","","","","","","","","","","","",""],"d":["A person with an age and a name","Find the quantity of a product by name","","","","","","","Returns the argument unchanged.","Returns the argument unchanged.","Calls <code>U::from(self)</code>.","Calls <code>U::from(self)</code>.","","","","","","","","","",""],"i":[0,0,6,6,7,6,7,0,6,7,6,7,0,6,7,7,6,7,6,7,6,7],"f":[0,0,0,[[]],[[]],[[]],[[]],[1,[[3,[2]]]],[[]],[[]],[[]],[[]],[[]],0,0,0,[[],4],[[],4],[[],4],[[],4],[[],5],[[],5]],"p":[[15,"str"],[15,"i32"],[4,"Option"],[4,"Result"],[3,"TypeId"],[3,"Person"],[3,"Product"]]}\
-}');
-if (typeof window !== 'undefined' && window.initSearch) {window.initSearch(searchIndex)};
-if (typeof exports !== 'undefined') {exports.searchIndex = searchIndex};
