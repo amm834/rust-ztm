@@ -12,6 +12,6 @@ fn main() {
     println!("{:?}", number);
     let str = may_be_word()
         .map(|word| word.len())
-        .map(|len| len + 1);
+        .map(|len| len + 1) ;
     println!("{:?}", str);
 }
